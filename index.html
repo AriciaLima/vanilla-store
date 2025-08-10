@@ -3,10 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mahá Biocosméticos</title>
-    <link rel="stylesheet" href="css/header.css" />
+    <title>Mahá Biocosméticos – Cosméticos Naturais para Cabelos</title>
+    <meta
+      name="description"
+      content="Mahá Biocosméticos oferece cosméticos naturais para todos os tipos de cabelo, com nutrição intensa e ingredientes sustentáveis."
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- HEADER -->
     <header class="navbar">
       <div class="logo">
         <a href="index.html">
@@ -14,37 +20,166 @@
         </a>
       </div>
 
-      <nav class="menu">
-        <a href="#blog">Blog</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#produtos">Produtos</a>
-        <a href="#contato">Contato</a>
+      <nav class="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="produtos.html" class="active">Produtos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
       </nav>
 
-      <!-- AÇÕES: ÍCONES (agrupados) -->
       <div class="icons">
-        <!-- BOTÃO DE BUSCA -->
+        <!-- BUSCA -->
         <div class="search-container">
-          <button class="search-toggle" id="search-toggle">
+          <button
+            class="search-toggle"
+            id="search-toggle"
+            aria-label="Abrir busca"
+          >
             <img src="assets/icons/search.svg" alt="Buscar" width="20" />
           </button>
 
-          <form class="search-bar" id="search-bar">
-            <input type="text" placeholder="Buscar..." />
-            <button type="submit">
-              <img src="assets/icons/search.svg" alt="Buscar" width="20" />
-            </button>
+          <form
+            class="search-bar"
+            id="search-bar"
+            role="search"
+            aria-label="Pesquisar no site"
+            action="#"
+          >
+            <input
+              type="text"
+              placeholder="Buscar..."
+              aria-label="Digite sua pesquisa"
+            />
           </form>
         </div>
 
-        <!-- ÍCONES PADRÃO -->
+        <!-- LOGIN -->
         <a href="login.html" class="icon-link" title="Login">
           <img src="assets/icons/account-circle.svg" alt="Login" width="20" />
         </a>
+
+        <!-- CARRINHO -->
         <a href="carrinho.html" class="icon-link" title="Carrinho">
           <img src="assets/icons/shopping-cart.svg" alt="Carrinho" width="20" />
         </a>
       </div>
     </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+      <!-- HERO / SLIDER -->
+      <section class="hero" aria-label="Destaques">
+        <div class="slider" id="slider">
+          <!-- Slide 1 -->
+          <article class="slide is-active">
+            <img
+              src="assets/img/image1.webp"
+              alt="Condicionador Castanha Murumuru Mahá – nutrição intensa"
+            />
+            <div class="slide-caption">
+              <h2>Castanha Murumuru</h2>
+              <p>Nutrição intensa para todos os tipos de cabelo.</p>
+              <a href="#produtos" class="btn">Ver produtos</a>
+            </div>
+          </article>
+
+          <!-- Slide 2 -->
+          <article class="slide">
+            <img
+              src="assets/img/kit castanha mururu.webp"
+              alt="Linha Castanha do Pará Mahá – brilho e hidratação"
+            />
+            <div class="slide-caption">
+              <h2>Castanha do Pará</h2>
+              <p>Brilho, força e hidratação profunda.</p>
+              <a href="#produtos" class="btn">Conheça</a>
+            </div>
+          </article>
+
+          <!-- Slide 3 -->
+          <article class="slide">
+            <img
+              src="assets/img/mascara.webp"
+              alt="Máscara Nutrição Mahá – fios macios e sem frizz"
+            />
+            <div class="slide-caption">
+              <h2>Máscara Nutrição</h2>
+              <p>Fios macios e sem frizz.</p>
+              <a href="#produtos" class="btn">Comprar</a>
+            </div>
+          </article>
+
+          <!-- Controles -->
+          <button class="nav prev" aria-label="Anterior">❮</button>
+          <button class="nav next" aria-label="Próximo">❯</button>
+
+          <!-- Dots -->
+          <div class="dots" id="slider-dots" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <!-- PRODUTOS -->
+      <section class="products" id="produtos" aria-labelledby="titulo-produtos">
+        <h2 id="titulo-produtos">Produtos de Cabelo</h2>
+        <div class="grid">
+          <!-- Card 1 -->
+          <article class="card">
+            <img
+              src="assets/produtos/p1.jpg"
+              alt="Shampoo Castanha Murumuru 250ml – Mahá Biocosméticos"
+            />
+            <h3>Shampoo Castanha Murumuru</h3>
+            <p class="price">€ 14,90</p>
+            <button type="button" class="btn-secondary">
+              Adicionar ao carrinho
+            </button>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card">
+            <img
+              src="assets/produtos/p2.jpg"
+              alt="Condicionador Castanha Murumuru 250ml – Mahá Biocosméticos"
+            />
+            <h3>Condicionador Castanha Murumuru</h3>
+            <p class="price">€ 15,90</p>
+            <button type="button" class="btn-secondary">
+              Adicionar ao carrinho
+            </button>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card">
+            <img
+              src="assets/produtos/p3.jpg"
+              alt="Máscara Nutrição 200g – Mahá Biocosméticos"
+            />
+            <h3>Máscara Nutrição</h3>
+            <p class="price">€ 19,90</p>
+            <button type="button" class="btn-secondary">
+              Adicionar ao carrinho
+            </button>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card">
+            <img
+              src="assets/produtos/p4.jpg"
+              alt="Óleo Capilar Castanhas 60ml – Mahá Biocosméticos"
+            />
+            <h3>Óleo Capilar Castanhas</h3>
+            <p class="price">€ 17,90</p>
+            <button type="button" class="btn-secondary">
+              Adicionar ao carrinho
+            </button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
   </body>
 </html>
