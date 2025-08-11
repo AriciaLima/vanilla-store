@@ -3,9 +3,177 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Produtos</title>
+    <title>Nossos Produtos – Mahá Biocosméticos</title>
+    <meta
+      name="description"
+      content="Descubra nossa linha completa de cosméticos naturais Mahá Biocosméticos. Produtos para cabelo e corpo com ingredientes sustentáveis."
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <h1>Produtos</h1>
+    <!-- HEADER -->
+    <header class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/icons/logo.svg" alt="Logo Mahá Biocosméticos" />
+        </a>
+      </div>
+
+      <nav class="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="produtos.html" class="active">Produtos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="icons">
+        <!-- BUSCA -->
+        <div class="search-container">
+          <button
+            class="search-toggle"
+            id="search-toggle"
+            aria-label="Abrir busca"
+          >
+            <img src="assets/icons/search.svg" alt="Buscar" width="20" />
+          </button>
+
+          <form
+            class="search-bar"
+            id="search-bar"
+            role="search"
+            aria-label="Pesquisar no site"
+            action="#"
+          >
+            <input
+              type="text"
+              placeholder="Buscar produtos..."
+              aria-label="Digite sua pesquisa"
+            />
+          </form>
+        </div>
+
+        <!-- LOGIN -->
+        <a href="#" class="icon-link" title="Login">
+          <img src="assets/icons/account-circle.svg" alt="Login" width="20" />
+        </a>
+
+        <!-- CARRINHO -->
+        <a href="#" class="icon-link" title="Carrinho">
+          <img src="assets/icons/shopping-cart.svg" alt="Carrinho" width="20" />
+        </a>
+      </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+      <!-- HERO -->
+      <section class="hero-products">
+        <div class="hero-content">
+          <h1>Nossos Produtos</h1>
+          <p>Descubra nossa linha completa de cosméticos naturais</p>
+        </div>
+      </section>
+
+      <!-- PRODUTOS -->
+      <section class="products" id="produtos" aria-labelledby="titulo-produtos">
+        <div class="grid">
+          <!-- Card 1 - Shampoo -->
+          <article class="card">
+            <img
+              src="assets/img/xampu-buriti.png"
+              alt="Shampoo Castanha Murumuru 250ml – Mahá Biocosméticos"
+            />
+            <h3>Shampoo Castanha Murumuru</h3>
+            <p class="price">€ 14,90</p>
+            <div class="quantity-controls">
+              <button type="button" class="qty-btn minus" data-product="shampoo">-</button>
+              <input type="number" class="qty-input" value="0" min="0" max="100" data-product="shampoo">
+              <button type="button" class="qty-btn plus" data-product="shampoo">+</button>
+            </div>
+            <button type="button" class="btn-secondary" data-product="shampoo" data-price="14.90">
+              Adicionar ao carrinho
+            </button>
+          </article>
+
+          <!-- Card 2 - Condicionador -->
+          <article class="card">
+            <img
+              src="assets/img/kit-xampu-condicionador.png"
+              alt="Condicionador Castanha Murumuru 250ml – Mahá Biocosméticos"
+            />
+            <h3>Condicionador Castanha Murumuru</h3>
+            <p class="price">€ 15,90</p>
+            <div class="quantity-controls">
+              <button type="button" class="qty-btn minus" data-product="condicionador">-</button>
+              <input type="number" class="qty-input" value="0" min="0" max="100" data-product="condicionador">
+              <button type="button" class="qty-btn plus" data-product="condicionador">+</button>
+            </div>
+            <button type="button" class="btn-secondary" data-product="condicionador" data-price="15.90">
+              Adicionar ao carrinho
+            </button>
+          </article>
+
+          <!-- Card 3 - Máscara -->
+          <article class="card">
+            <img
+              src="assets/img/mascara-nutricao.png"
+              alt="Máscara Nutrição 200g – Mahá Biocosméticos"
+            />
+            <h3>Máscara Nutrição</h3>
+            <p class="price">€ 19,90</p>
+            <div class="quantity-controls">
+              <button type="button" class="qty-btn minus" data-product="mascara">-</button>
+              <input type="number" class="qty-input" value="0" min="0" max="100" data-product="mascara">
+              <button type="button" class="qty-btn plus" data-product="mascara">+</button>
+            </div>
+            <button type="button" class="btn-secondary" data-product="mascara" data-price="19.90">
+              Adicionar ao carrinho
+            </button>
+          </article>
+
+          <!-- Card 4 - Óleo -->
+          <article class="card">
+            <img
+              src="assets/img/oleo-castanha-do-para.png"
+              alt="Óleo Capilar Castanhas 60ml – Mahá Biocosméticos"
+            />
+            <h3>Óleo Capilar Castanhas</h3>
+            <p class="price">€ 17,90</p>
+            <div class="quantity-controls">
+              <button type="button" class="qty-btn minus" data-product="oleo">-</button>
+              <input type="number" class="qty-input" value="0" min="0" max="100" data-product="oleo">
+              <button type="button" class="qty-btn plus" data-product="oleo">+</button>
+            </div>
+            <button type="button" class="btn-secondary" data-product="oleo" data-price="17.90">
+              Adicionar ao carrinho
+            </button>
+          </article>
+
+          <!-- Card 5 - Sabonete -->
+          <article class="card">
+            <img
+              src="assets/img/sabonete-maha.png"
+              alt="Sabonete Mahá – Mahá Biocosméticos"
+            />
+            <h3>Sabonete Mahá</h3>
+            <p class="price">€ 12,90</p>
+            <div class="quantity-controls">
+              <button type="button" class="qty-btn minus" data-product="sabonete">-</button>
+              <input type="number" class="qty-input" value="0" min="0" max="100" data-product="sabonete">
+              <button type="button" class="qty-btn plus" data-product="sabonete">+</button>
+            </div>
+            <button type="button" class="btn-secondary" data-product="sabonete" data-price="12.90">
+              Adicionar ao carrinho
+            </button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- JS -->
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

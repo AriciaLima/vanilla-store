@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Xampu Castanha do Pará 300 ml",
+    "price": 29.90,
+    "weight_kg": 0.380,
+    "length_cm": 20.0,
+    "width_cm": 7.0,
+    "height_cm": 7.0,
+    "description": "Nutrição intensa para cabelos ressecados. Fórmula enriquecida com óleo de castanha do Pará, que promove brilho e maciez.",
+    "image": "assets/img/xampu-castanha-do-para.webp"
+  },
+  {
+    "id": 2,
+    "name": "Condicionador Castanha do Pará 300 ml",
+    "price": 29.90,
+    "weight_kg": 0.390,
+    "length_cm": 20.0,
+    "width_cm": 7.0,
+    "height_cm": 7.0,
+    "description": "Hidratação profunda e desembaraço fácil, com nutrição prolongada para todos os tipos de cabelo.",
+    "image": "assets/img/condicionador-castanha-do-para.webp"
+  },
+  {
+    "id": 3,
+    "name": "Máscara de Nutrição Capilar 250 g",
+    "price": 44.90,
+    "weight_kg": 0.330,
+    "length_cm": 8.0,
+    "width_cm": 9.0,
+    "height_cm": 9.0,
+    "description": "Tratamento intensivo que repõe nutrientes essenciais, deixando os fios sedosos e resistentes.",
+    "image": "assets/img/mascara-nutricao.webp"
+  },
+  {
+    "id": 4,
+    "name": "Óleo de Castanha do Pará 30 ml (conta-gotas)",
+    "price": 32.90,
+    "weight_kg": 0.120,
+    "length_cm": 11.0,
+    "width_cm": 3.5,
+    "height_cm": 3.5,
+    "description": "Óleo finalizador que sela as cutículas, controla o frizz e dá brilho instantâneo.",
+    "image": "assets/img/oleo-castanha-do-para.webp"
+  },
+  {
+    "id": 5,
+    "name": "Hidratante Corporal de Andiroba 200 ml",
+    "price": 34.90,
+    "weight_kg": 0.260,
+    "length_cm": 18.0,
+    "width_cm": 6.0,
+    "height_cm": 6.0,
+    "description": "Hidratação prolongada com textura leve e rápida absorção. Ideal para uso diário.",
+    "image": "assets/img/kit-andiroba.webp"
+  },
+  {
+    "id": 6,
+    "name": "Sabonete Maha em Barra 90 g",
+    "price": 5.90,
+    "weight_kg": 0.110,
+    "length_cm": 8.0,
+    "width_cm": 6.0,
+    "height_cm": 3.0,
+    "description": "Limpeza suave com fragrância natural e ingredientes nutritivos para a pele.",
+    "image": "assets/img/sabonete-maha.webp"
+  }
+]
